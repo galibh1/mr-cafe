@@ -1,74 +1,157 @@
-# React + TypeScript + Vite
+# MR Cafe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  A responsive coffee-shop web application for exploring menu items, placing orders, and viewing restaurant information through a modern interface.
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://mr-cafe-smoky.vercel.app/"><strong>Live Site</strong></a>
+  ·
+  <a href="https://github.com/galibh1/mr-cafe"><strong>Source Code</strong></a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## React Compiler
+MR Cafe is a modern frontend application built for a coffee shop. It organizes reusable interface components, structured menu data, page-level routes, and responsive layouts to create a smooth browsing experience across desktop and mobile devices.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Preview
 
-## Expanding the ESLint configuration
+Add a screenshot to `public/mr-cafe-preview.png`, then uncomment the following line:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<!--
+<p align="center">
+  <img src="./public/mr-cafe-preview.png" alt="MR Cafe project screenshot" width="900" />
+</p>
+-->
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Main Technologies
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<p>
+  <img src="https://skillicons.dev/icons?i=react,ts,tailwind,vite&theme=dark" alt="MR Cafe technology stack" />
+</p>
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+- ESLint
+- PostCSS
+- Autoprefixer
+
+## Key Features
+
+- Responsive coffee-shop interface
+- Menu browsing
+- Product and content data separated from components
+- Online-ordering user interface
+- Table-reservation interface
+- Reusable home, layout, and UI components
+- Client-side routing
+- Mobile-friendly navigation
+- Modern visual presentation
+- Vite-powered development and production builds
+
+## Dependencies
+
+### Production Dependencies
+
+- `react`
+- `react-dom`
+- `react-router-dom`
+
+### Development Dependencies
+
+- `typescript`
+- `vite`
+- `tailwindcss`
+- `postcss`
+- `autoprefixer`
+- `eslint`
+- `typescript-eslint`
+- `eslint-plugin-react-hooks`
+- `eslint-plugin-react-refresh`
+- `@vitejs/plugin-react`
+- React and Node type packages
+
+## Run Locally
+
+### Prerequisites
+
+- Node.js 20 or later
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/galibh1/mr-cafe.git
+cd mr-cafe
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Start the Development Server
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
-# mr-cafe
+
+Open the URL shown by Vite, usually:
+
+```text
+http://localhost:5173
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview the Production Build
+
+```bash
+npm run preview
+```
+
+### Run ESLint
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```text
+mr-cafe/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── home/
+│   │   ├── layout/
+│   │   └── ui/
+│   ├── data/
+│   ├── pages/
+│   ├── routes/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── package.json
+├── tailwind.config.js
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## Links
+
+- **Live Site:** https://mr-cafe-smoky.vercel.app/
+- **Repository:** https://github.com/galibh1/mr-cafe
+- **Issues:** https://github.com/galibh1/mr-cafe/issues
+
+## Author
+
+**Galib Hasan Alvee**
+
+- GitHub: https://github.com/galibh1
+- LinkedIn: https://www.linkedin.com/in/galibh1/
+- Email: galibh300@gmail.com
