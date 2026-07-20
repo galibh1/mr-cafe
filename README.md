@@ -14,9 +14,7 @@
 
 MR Cafe is a modern frontend application built for a coffee shop. It organizes reusable interface components, structured menu data, page-level routes, and responsive layouts to create a smooth browsing experience across desktop and mobile devices.
 
-## Project Preview
 
-Add a screenshot to `public/mr-cafe-preview.png`, then uncomment the following line:
 
 <!--
 <p align="center">
