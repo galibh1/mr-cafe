@@ -144,7 +144,7 @@ mr-cafe/
 
 - **Live Site:** https://mr-cafe-smoky.vercel.app/
 - **Repository:** https://github.com/galibh1/mr-cafe
-- **Issues:** https://github.com/galibh1/mr-cafe/issues
+
 
 ## Author
 
